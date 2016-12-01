@@ -3,6 +3,8 @@
                     <> <> <> */
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
 public class MathisFun{
    public static void main (String [] args){
       Scanner kb = new Scanner (System.in);
@@ -151,6 +153,55 @@ public class MathisFun{
             }
          }
       }
+   }
+  
+  //addition_learningtime 
+   public static void learnTime_add(){
+      //inserting image
+      ImageIcon icon = new ImageIcon("applesadd.png");
+      //Messsage seen on screen
+      String learn_time = "<html><b>Learning Time!</b>";
+      String blurb= "\n<html><i>Addition</i> is a type of math that is used all the time."
+      +"\nIt is when you bring two or more numbers together to make a new amount.";
+      //Dialog box
+      JOptionPane.showMessageDialog(null,learn_time+blurb,"Level 1", JOptionPane.INFORMATION_MESSAGE,icon);
+     
+   }
+   //subtraction_learningtime 
+   public static void learnTime_sub(){
+      //inserting image
+      ImageIcon icon = new ImageIcon("bananasub.png");
+      //Messsage seen on screen
+      String learn_time = "<html><b>Learning Time!</b>";
+      String blurb= "\n<html><i>Subtraction</i> is a type of math that is used all the time."
+      +"\nIt is when you take one number or amount away from another to make a new amount.";
+      //Dialog box
+      JOptionPane.showMessageDialog(null,learn_time+blurb,"Level 2", JOptionPane.INFORMATION_MESSAGE,icon);
+      
+   }
+    //multiplication_learningtime 
+    public static void learnTime_mult(){
+      //inserting image
+      ImageIcon icon = new ImageIcon("watermelon.png");
+      //Messsage seen on screen
+      String learn_time = "<html><b>Learning Time!</b>";
+      String blurb= "\n<html><i>Multiplication</i> is a type of math that is used all the time."
+      +"\nThe basic idea of multiplying is repeated addition.";
+     //Dialog box
+      JOptionPane.showMessageDialog(null,learn_time+blurb,"Level 3", JOptionPane.INFORMATION_MESSAGE,icon);
+        
+   }
+   //division_learningtime 
+    public static void learnTime_divi(){
+      //inserting image
+      ImageIcon icon = new ImageIcon("oranges.png");
+      //Messsage seen on screen
+      String learn_time = "<html><b>Learning Time!</b>";
+      String blurb= "\n<html><i>Division</i> is a type of math that is used all the time."
+      +"\nIt is when you separate something into multiple parts.";
+      //Dialog box
+      JOptionPane.showMessageDialog(null,learn_time+blurb,"Level 4", JOptionPane.INFORMATION_MESSAGE,icon);
+      System.exit(0);  
    }
 
 }
